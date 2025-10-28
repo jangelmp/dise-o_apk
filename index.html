@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captura de Evidencias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <!-- Sección 1: Título -->
+        <fieldset class="groupbox titulo">
+            <legend>Título</legend>
+            <h1>Captura de Evidencias</h1>
+        </fieldset>
+
+        <!-- Sección 2: Cámara -->
+        <fieldset class="groupbox camara">
+            <legend>Cámara</legend>
+            <div class="camera-area">
+                <video id="camera" autoplay playsinline></video>
+            </div>
+        </fieldset>
+
+        <!-- Sección 3: Datos del recuadro -->
+        <fieldset class="groupbox datos">
+            <legend>Datos del Recuadro</legend>
+            <div class="form-group">
+                <label for="afiliacion">Afiliación:</label>
+                <input type="text" id="afiliacion" placeholder="Ingrese afiliación">
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">Ubicación:</label>
+                <input type="text" id="ubicacion" placeholder="Ingrese ubicación">
+            </div>
+            <div class="form-group">
+                <label for="ticket">Ticket:</label>
+                <input type="text" id="ticket" placeholder="Número de ticket">
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="text" id="color" placeholder="Color del recuadro">
+            </div>
+            <div class="form-group">
+                <label for="ubicacion2">Ubicación:</label>
+                <input type="text" id="ubicacion2" placeholder="Ubicación adicional">
+            </div>
+        </fieldset>
+
+        <!-- Sección 4: Descarga -->
+        <fieldset class="groupbox descarga">
+            <legend>Descarga</legend>
+            <button id="btnDescargar">Descargar Imagen</button>
+        </fieldset>
+
+    </main>
+
+</body>
+</html>
