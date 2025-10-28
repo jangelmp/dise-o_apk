@@ -17,12 +17,17 @@
         </fieldset>
 
         <!-- Sección 2: Cámara -->
-        <fieldset class="groupbox camara">
-            <legend>Cámara</legend>
-            <div class="camera-area">
-                <video id="camera" autoplay playsinline></video>
-            </div>
-        </fieldset>
+		<fieldset class="groupbox camara">
+			<legend>Cámara</legend>
+			<div class="camera-area">
+				<video id="camera" autoplay playsinline></video>
+			</div>
+
+			<div class="camera-buttons">
+				<button id="btnAbrirCamara">Abrir Cámara</button>
+				<button id="btnTomarFoto">Tomar Foto</button>
+			</div>
+		</fieldset>
 
         <!-- Sección 3: Datos del recuadro -->
         <fieldset class="groupbox datos">
@@ -39,10 +44,10 @@
                 <label for="ticket">Ticket:</label>
                 <input type="text" id="ticket" placeholder="Número de ticket">
             </div>
-            <div class="form-group">
-                <label for="color">Color:</label>
-                <input type="text" id="color" placeholder="Color del recuadro">
-            </div>
+			<div class="form-group">
+				<label for="color">Color:</label>
+				<input type="color" id="color" value="#1a2e63">
+			</div>
             <div class="form-group">
                 <label for="ubicacion2">Ubicación:</label>
                 <input type="text" id="ubicacion2" placeholder="Ubicación adicional">
