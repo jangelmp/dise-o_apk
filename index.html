@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Captura de Evidencias</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <main class="app-container">
 
-    <main class="container">
-
-        <!-- Sección 1: Título -->
+        <!-- 🟦 Sección 1: Título -->
         <fieldset class="groupbox titulo">
             <legend>Título</legend>
             <h1>Captura de Evidencias</h1>
         </fieldset>
 
-        <!-- Sección 2: Cámara -->
-		<fieldset class="groupbox camara">
-			<legend>Cámara</legend>
-			<div class="camera-area">
-				<video id="camera" autoplay playsinline></video>
-			</div>
+        <!-- 🟩 Sección 2: Cámara -->
+        <fieldset class="groupbox camara">
+            <legend>Cámara</legend>
+            <div class="camera-preview">
+                <div class="camera-frame">
+                    <p class="camera-placeholder">Vista previa de la cámara</p>
+                </div>
+            </div>
+        </fieldset>
 
-			<div class="camera-buttons">
-				<button id="btnAbrirCamara">Abrir Cámara</button>
-				<button id="btnTomarFoto">Tomar Foto</button>
-			</div>
-		</fieldset>
-
-        <!-- Sección 3: Datos del recuadro -->
+        <!-- 🟨 Sección 3: Datos -->
         <fieldset class="groupbox datos">
             <legend>Datos del Recuadro</legend>
             <div class="form-group">
-                <label for="afiliacion">Afiliación:</label>
+                <label for="afiliacion">Afiliación</label>
                 <input type="text" id="afiliacion" placeholder="Ingrese afiliación">
             </div>
             <div class="form-group">
-                <label for="ubicacion">Ubicación:</label>
-                <input type="text" id="ubicacion" placeholder="Ingrese ubicación">
+                <label for="ubicacion1">Ubicación</label>
+                <input type="text" id="ubicacion1" placeholder="Ingrese ubicación">
             </div>
             <div class="form-group">
-                <label for="ticket">Ticket:</label>
-                <input type="text" id="ticket" placeholder="Número de ticket">
+                <label for="ticket">Ticket</label>
+                <input type="text" id="ticket" placeholder="Ingrese ticket">
             </div>
-			<div class="form-group">
-				<label for="color">Color:</label>
-				<input type="color" id="color" value="#1a2e63">
-			</div>
             <div class="form-group">
-                <label for="ubicacion2">Ubicación:</label>
-                <input type="text" id="ubicacion2" placeholder="Ubicación adicional">
+                <label for="color">Color</label>
+                <input type="text" id="color" placeholder="Ingrese color">
+            </div>
+            <div class="form-group">
+                <label for="ubicacion2">Ubicación (2)</label>
+                <input type="text" id="ubicacion2" placeholder="Ingrese ubicación adicional">
             </div>
         </fieldset>
 
-        <!-- Sección 4: Descarga -->
+        <!-- 🟥 Sección 4: Descarga -->
         <fieldset class="groupbox descarga">
             <legend>Descarga</legend>
-            <button id="btnDescargar">Descargar Imagen</button>
+            <button id="btnDescargar">Descargar imagen</button>
         </fieldset>
 
     </main>
-
 </body>
 </html>
